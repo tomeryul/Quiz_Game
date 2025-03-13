@@ -1,72 +1,72 @@
 # Quiz App
 
-## Description
-This is a JavaScript-powered quiz application that allows users to select answers to multiple-choice questions. The application tracks the user's score and game progress.
+A web-based interactive quiz game where users answer multiple-choice questions. The application tracks the user's score and HP (health points), decreasing HP when incorrect answers are given. The game ends when HP reaches zero.
 
 ## Features
-- Displays multiple-choice questions
-- Tracks user's score and remaining lives
-- Sends selected answers to the backend
-- Determines if the game has ended
-- Uses Express.js for handling API requests
+
+- Multiple-choice quiz format.
+- HP bar that decreases with incorrect answers.
+- Persistent HP tracking using localStorage or server-side storage.
+- Dynamic question handling.
+- Uses **Node.js**, **Express**, **jQuery**, and **Bootstrap** for a smooth user experience.
 
 ## Technologies Used
-- **Frontend:** HTML, CSS, JavaScript, jQuery
-- **Backend:** Node.js, Express.js
-- 
+
+- **Frontend:** HTML, CSS, JavaScript, jQuery, Bootstrap
+- **Backend:** Node.js, Express
+- **Data Handling:** JSON (or database if extended)
+
 ## Installation
-1. **Clone the Repository**
+
+1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repo/quiz-app.git
+   git clone https://github.com/yourusername/quiz-app.git
    cd quiz-app
    ```
 
-2. **Install Dependencies**
+2. Install dependencies:
    ```sh
    npm install
    ```
 
-3. **Run the Application**
+3. Start the server:
    ```sh
    node index.js
    ```
-   The server will start on `http://localhost:3000` by default.
+
+4. Open the app in your browser:
+   ```sh
+   http://localhost:3000
+   ```
 
 ## Usage
-1. Open `http://localhost:3000` in your browser.
-2. Answer the questions by clicking on the buttons.
-3. The backend processes the answer and sends back the game state.
-4. The game continues until completion.
 
-## API Endpoints
-### `POST /answer`
-**Description:** Receives the selected answer and determines correctness.
+1. Answer the questions by selecting an option.
+2. If incorrect, your HP will decrease.
+3. The game ends when HP reaches zero.
+4. If all questions are answered correctly, the game proceeds to the next stage.
 
-#### Request Body:
-```json
-{
-  "val": "Selected Answer"
-}
+## Project Structure
+```
+quiz-app/
+├── public/
+│   ├── index.html  # Main frontend
+│   ├── style.css   # Stylesheet
+│   ├── script.js   # Frontend logic
+│   ├── addscript.js # Additional scripts
+├── index.js        # Express server logic
+├── Quiz.js         # Quiz logic
+├── package.json    # Dependencies & scripts
+└── README.md       # Project documentation
 ```
 
-#### Response Example:
-```json
-{
-  "correct": true,
-  "endGame": false,
-  "life": 2,
-  "currentQuestion": "What is the capital of France?",
-  "currentQuestionChoices": ["Berlin", "Paris", "Madrid", "Rome"]
-}
-```
 
 ## Future Enhancements
-- Add a timer for each question
-- Implement a leaderboard
-- Store user progress using a database
+- Store questions in a database.
+- Implement user authentication and leaderboards.
+- Add more difficulty levels.
+- Improve UI/UX with animations and sounds.
 
 ## License
 This project is licensed under the MIT License.
 
-## Author
-Created by **Tomer**.
