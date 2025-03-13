@@ -21,7 +21,7 @@ A web-based interactive quiz game where users answer multiple-choice questions. 
 1. Clone the repository:
    ```sh
    git clone https://github.com/yourusername/quiz-app.git
-   cd quiz-app
+   cd Quiz-App
    ```
 
 2. Install dependencies:
