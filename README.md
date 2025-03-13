@@ -52,7 +52,7 @@ quiz-app/
 ├── public/
 |   ├──  views/
 |   │   ├── index.html  # Main frontend
-|   │   ├── endGame.html  # Main frontend
+|   │   ├── endGame.html  # Second frontend
 │   ├── style.css   # Stylesheet
 │   ├── script.js   # Frontend logic
 ├── index.js        # Express server logic
