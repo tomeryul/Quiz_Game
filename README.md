@@ -50,15 +50,20 @@ A web-based interactive quiz game where users answer multiple-choice questions. 
 ```
 quiz-app/
 ├── public/
-│   ├── index.html  # Main frontend
+|   ├──  views/
+|   │   ├── index.html  # Main frontend
+|   │   ├── endGame.html  # Main frontend
 │   ├── style.css   # Stylesheet
 │   ├── script.js   # Frontend logic
-│   ├── addscript.js # Additional scripts
 ├── index.js        # Express server logic
 ├── Quiz.js         # Quiz logic
 ├── package.json    # Dependencies & scripts
 └── README.md       # Project documentation
 ```
+
+## GIF 
+
+![20250313124242448](https://github.com/user-attachments/assets/40e765e4-afa9-486a-9d7b-2719f8b9a361)
 
 
 ## Future Enhancements
