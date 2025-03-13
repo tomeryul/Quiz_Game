@@ -57,6 +57,7 @@ quiz-app/
 │   ├── script.js   # Frontend logic
 ├── index.js        # Express server logic
 ├── Quiz.js         # Quiz logic
+├── Question.js     # Question logic
 ├── package.json    # Dependencies & scripts
 └── README.md       # Project documentation
 ```
