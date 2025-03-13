@@ -72,6 +72,4 @@ quiz-app/
 - Add more difficulty levels.
 - Improve UI/UX with animations and sounds.
 
-## License
-This project is licensed under the MIT License.
 
