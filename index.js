@@ -35,11 +35,7 @@ function StartGame(req, res, next) {
 }
 
 app.post("/restart",restartQuiz, (req, res) => {
-    res.render("index.ejs", {
-        currentQuestion,
-        currentQuestionChoices,
-      });
-
+    res.redirect("/");
 });
 
 function getNextQuestion(req, res) {
